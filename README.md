@@ -10,6 +10,7 @@ Check this file to view current driver support progress: [PROGRESS.md](PROGRESS.
 ```
 sudo apt install wget unzip build-essential git bc swig libncurses-dev libpython3-dev libssl-dev
 sudo apt install pkg-config zlib1g-dev libusb-dev libusb-1.0-0-dev
+sudo apt install -y  cpio rsync bc
 sudo apt install python3-distutils
 ```
 
@@ -31,6 +32,7 @@ make widora_tiny200_defconfig
 
 ### Regular build
 ```
+export FORCE_UNSAFE_CONFIGURE=1
 make
 ```
 
